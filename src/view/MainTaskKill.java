@@ -11,6 +11,7 @@ public class MainTaskKill {
 
 //		String process = "ps aux";
 //		kill.readProcess(process);
+		
 
 		String param = "mate-calc";
 		kill.killProcess(param);
