@@ -9,10 +9,10 @@ public class MainTaskKill {
 		TaskKill kill = new TaskKill();
 		
 
-		String process = "TASKLIST /FO TABLE";
-		kill.readProcess(process);
+//		String process = "ps aux";
+//		kill.readProcess(process);
 
-		String param = "5232";
+		String param = "mate-calc";
 		kill.killProcess(param);
 	}
 

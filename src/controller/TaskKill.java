@@ -63,8 +63,8 @@ public class TaskKill {
 	
 	
 	public void killProcess(String param) {
-		String cmdPid= "TASKKILL /PID";
-		String cmdNome = "TASKKILL /IM";
+		String cmdPid= "kill -9";
+		String cmdNome = "pkill -9";
 		int pid = 0;
 		StringBuffer buffer = new StringBuffer();
 		
