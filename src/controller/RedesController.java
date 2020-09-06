@@ -39,27 +39,6 @@ public class RedesController {
 			}
 		}
 	}
-	
-	public void readProcess(String process) {
-		try {
-			Process p = Runtime.getRuntime().exec(process);
-			InputStream fluxo = p.getInputStream();
-			InputStreamReader leitor = new InputStreamReader(fluxo);
-			BufferedReader buffer = new BufferedReader(leitor);
-			String linha = buffer.readLine();
-			while (linha != null) {				
-				System.out.println(linha);					
-				linha = buffer.readLine();
-			}
-			buffer.close();
-			leitor.close();
-			fluxo.close();
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
 
 	public void readProcess1(String process) {
 		try {

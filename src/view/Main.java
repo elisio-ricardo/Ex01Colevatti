@@ -6,8 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		RedesController redeController = new RedesController();
-		String os = redeController.os();
+		RedesController rede = new RedesController();
+		String os = rede.os();
 		System.out.println(os);
 
 //		String process = "C:\\Windows\\regedit.exe";
